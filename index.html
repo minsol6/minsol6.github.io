@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>모바일 웹사이트</title>
+    
+    <style>
+        /* 기본 여백 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent; /* 터치 시 하이라이트 제거 */
+        }
+
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* 메인 컨텐츠 영역 */
+        main {
+            padding: 20px;
+            max-width: 600px; /* 모바일 가독성을 위한 너비 제한 */
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        /* 버튼 모바일 최적화 (터치하기 쉬운 크기) */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* 푸터 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>My Mobile Web</h2>
+    </header>
+
+    <main>
+        <section class="card">
+            <h3>환영합니다!</h3>
+            <p>이 페이지는 스마트폰에서 보기 편하도록 제작된 반응형 웹문서입니다.</p>
+        </section>
+
+        <section class="card">
+            <h3>주요 특징</h3>
+            <ul>
+                <li>가독성 높은 폰트 크기</li>
+                <li>터치하기 편한 버튼 인터페이스</li>
+                <li>빠른 로딩 속도</li>
+            </ul>
+        </section>
+
+        <a href="#" class="btn">자세히 알아보기</a>
+    </main>
+
+    <footer>
+        &copy; 2026 Mobile Project. All rights reserved.
+    </footer>
+
+</body>
+</html>

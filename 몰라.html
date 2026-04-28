@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI Software 모바일 포털</title>
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+
+        /* 상단 메뉴 (Navigation) */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        main {
+            padding: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #007bff;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+
+        /* 리스트 스타일 */
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        /* 갤러리 스타일 */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background-color: #ddd;
+        }
+
+        /* SNS 메뉴 버튼 */
+        .sns-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .sns-btn {
+            flex: 1 1 45%;
+            padding: 12px;
+            text-align: center;
+            background-color: #e4e6eb;
+            text-decoration: none;
+            color: #050505;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#intro">소개</a>
+        <a href="#tech">기술</a>
+        <a href="#gallery">갤러리</a>
+        <a href="#content">콘텐츠</a>
+        <a href="#sns">SNS</a>
+    </nav>
+
+    <header>
+        <h1>AI Software Portal</h1>
+    </header>
+
+    <main>
+        <section id="intro" class="section-card">
+            <h2>홈페이지 소개</h2>
+            <p>인공지능(AI)은 인간의 지능을 기계가 모방하는 기술입니다. 본 페이지는 AI Software 전공의 학습 내용과 프로젝트를 모바일 환경에서 한눈에 볼 수 있도록 구성되었습니다.</p>
+        </section>
+
+        <section id="tech" class="section-card">
+            <h2>학습 기술 역량</h2>
+            <ul>
+                <li><strong>HTML5:</strong> 웹 문서의 기본 구조 및 콘텐츠 설계</li>
+                <li><strong>CSS3:</strong> 반응형 웹 및 스타일 시트 디자인</li>
+                <li><strong>JavaScript:</strong> 동적 기능 및 프로그래밍 구현</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section-card">
+            <h2>사진 갤러리</h2>
+            <div class="gallery">
+                <img src="AI.png" alt="AI 이미지 1">
+                <img src="AI.png" alt="AI 이미지 2">
+                <img src="AI.png" alt="AI 이미지 3">
+                <img src="AI.png" alt="AI 이미지 4">
+            </div>
+        </section>
+
+        <section id="content" class="section-card">
+            <h2>핵심 분야</h2>
+            <ul>
+                <li>🤖 <strong>AI 콘텐츠:</strong> 데이터 기반 미디어 생성</li>
+                <li>💻 <strong>프로그래밍:</strong> Java 및 웹 기반 시스템 개발</li>
+                <li>📱 <strong>AI 앱:</strong> 지능형 모바일 애플리케이션</li>
+            </ul>
+        </section>
+
+        <section id="sns" class="section-card">
+            <h2>Social Connect</h2>
+            <div class="sns-group">
+                <a href="#" class="sns-btn">Instagram</a>
+                <a href="#" class="sns-btn">YouTube</a>
+                <a href="#" class="sns-btn">GitHub</a>
+                <a href="mailto:gbpark@yit.ac.kr" class="sns-btn">Email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 AI Software Project. All rights reserved.
+    </footer>
+
+</body>
+</html>
