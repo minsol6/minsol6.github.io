@@ -1,0 +1,12 @@
+p{
+    color:grey;
+}
+h1,p{
+    background-color: magenta;
+}
+div{
+    border:2px dashed red;
+}
+h2 {
+    text-align: center;
+}

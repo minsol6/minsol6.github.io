@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그 연습</title>
+    <style>
+        div {
+            margin-bottom: 8px;
+        }
+        label {
+            display: inline-block;
+            width: 70px; 
+        }
+    </style>
+</head>
+<body>
+    <p><strong>폼 태그</strong></p>
+    
+    <form action="text.jsp" method="post">
+        
+            <label for="fname">이름</label>
+            <input type="text" id="fname" name="gname">
+       
+
+        
+            <label for="pwd">암호</label>
+            <input type="password" id="pwd" name="pwd">
+      
+            <span>라디오 버튼:</span>
+            <input type="radio" name="gender_radio" value="1">
+            <input type="radio" name="gender_radio" value="2">
+            <input type="radio" name="gender_radio" value="3">
+
+            <span>체크박스:</span>
+            <input type="checkbox" name="hobby" value="1">
+            <input type="checkbox" name="hobby" value="2">
+            <input type="checkbox" name="hobby" value="3">
+
+<form action="text.jsp" method="post">
+    <input type="button" value="남성"><input type="button" value="여성">
+</form>
+
+<form action="server.jsp" method="get">
+    <legend>회원정보</legend>
+    <label for="file">파일선택</label>
+    <input type="file" id="file"><br>
+    <input type="image" id="image" src="" width="40" height="20" alt="전송"><br>
+    <label for="serch">찾기:</label>
+    <input type="search" id="serch"><br>
+    <input type="hidden" id="hidden" value="secretToken123">
+</form>
+</body>
+</html>
+        
+</form>
+</body>
+</html>
