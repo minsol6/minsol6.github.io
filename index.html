@@ -82,7 +82,7 @@
 
         .tech-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, min-minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
@@ -119,8 +119,14 @@
             font-size: 0.9rem;
         }
 
+        .code-btn-group {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
         /* AI Image Section */
-        #ai-section {
+        #ai {
             text-align: center;
         }
 
@@ -220,12 +226,11 @@
         <section id="code">
             <h2>03. 수업 실습 코드</h2>
             <p>수업 시간에 직접 작성한 코드 예시들입니다.</p>
-            <ul class="code-list">
-                <li style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                    <span>HTML5 웹 프로그래밍 기초 실습 모음 (하이퍼링크/폼/동영상/div)</span>
-                    <a href="html/diviframe.html" class="btn">실습 모음 보기</a>
-                </li>
-            </ul>
+            <div class="code-btn-group">
+                <a href="html/htmlTag.html" class="btn">HTML</a>
+                <a href="css/cssTag.html" class="btn">CSS</a>
+                <a href="js/jsTag.html" class="btn">JavaScript</a>
+            </div>
         </section>
 
         <!-- Section 4: Document Links -->

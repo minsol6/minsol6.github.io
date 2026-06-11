@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 실습 목록</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 10%;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #fff;
+            margin-bottom: 8px;
+            padding: 12px 15px;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        ul li a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS 실습 목록</h1>
+
+    <ul>
+        <li><a href="exCss.html">예제5-2 exCss</a> – 외부 스타일시트</li>
+        <li><a href="innerCss.html">예제5-3 innerCss</a> – 내부 스타일시트</li>
+        <li><a href="idSelector.html">예제5-6 idSelector</a> – 아이디 선택자</li>
+        <!-- 파일 비어있음: inlineCss.html
+        <li><a href="inlineCss.html">예제5-? inlineCss</a> – 인라인 스타일시트</li>
+        -->
+        <!-- 파일 비어있음: typeSelector.html
+        <li><a href="typeSelector.html">예제5-? typeSelector</a> – 타입 선택자</li>
+        -->
+    </ul>
+
+    <a href="../index.html" class="back-btn">← 이전으로</a>
+
+</body>
+</html>
